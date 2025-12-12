@@ -189,7 +189,7 @@ def draw_module_layout(modules_x, modules_y, blocks, grid):
 
     ax.set_xlim(-10, modules_x * 32)
     ax.set_ylim(-10, modules_y * 16)
-    ax.set_title(f'{modules_x} × {modules_y} ماژول', fontsize=14, fontweight='bold', pad=15)
+    ax.set_title(f'{modules_x} × {modules_y} ', fontsize=14, fontweight='bold', pad=15)
     ax.set_aspect('equal')
     ax.axis('off')
     plt.tight_layout()
@@ -921,5 +921,6 @@ if st.session_state.get("calculation_performed", False):
             "max_resolution": selected_controller["max_resolution"],
             "price": selected_controller_name
         }
+
 
     show_results_and_edit()
